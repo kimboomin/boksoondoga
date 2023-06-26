@@ -122,7 +122,7 @@ label[for="menu-btn"] span:nth-child(3){
     color: #F6F5E8;
     margin-bottom: 43px;
     transition: 0.3s;
-    font-family: "pretendard";
+    font-family: "Roboto";
     letter-spacing: 6px;
 }
 .menu-bar .menu:hover{
@@ -334,7 +334,7 @@ label[for="menu-btn"] span:nth-child(3){
     margin-top: 15px;
 }
 .sec-3-txt span.eng{
-    font-family: "pretendard";
+    font-family: "Roboto";
     font-size: 3rem;
     color: #CE7D1E;
     font-weight: 700;
@@ -355,7 +355,7 @@ label[for="menu-btn"] span:nth-child(3){
     padding: 0 214px 230px 214px;
 }
 .sec-4-txt h1.sec-4{
-    font-family: "pretendard";
+    font-family: "Roboto";
     color: #875214;
     font-size: 4.38rem;
     letter-spacing: 7px;
@@ -466,7 +466,7 @@ button.add:hover {
 }
 h1.sec-5-txt{
     margin-bottom: 145px;
-    font-family: "pretendard";
+    font-family: "Roboto";
     font-weight: 600;
     letter-spacing: 7px;
     line-height: 1.1;
@@ -571,7 +571,7 @@ h1.sec-5-txt{
 
 /* sec-7 */
 .sec-7-txt{
-    font-family: "pretendard";
+    font-family: "Roboto";
     color: #875214;
     opacity: 0.8;
     font-size: 4.37rem;
@@ -596,7 +596,7 @@ h1.sec-5-txt{
     border-bottom: 1px solid #875214;
 }
 .sec-7 .menu .btn{
-    font-family: "pretendard";
+    font-family: "Roboto";
     font-size: 2.5rem;
     color: #633C0F;
     letter-spacing: 4px;
@@ -609,7 +609,7 @@ h1.sec-5-txt{
 .sec-7 .submenu{
     display: none;
     color: #948B80;
-    font-family: "pretendard";
+    font-family: "Roboto";
     font-size: 2.5rem;
     letter-spacing: 5px;
     font-weight: 300;
@@ -663,7 +663,7 @@ h1.sec-5-txt{
 }
 .footer-txt .txt-top{
     display: flex;
-    font-family: "pretendard";
+    font-family: "Roboto";
     color: #584D4D;
     font-size: 1.6rem;
     font-weight: 600;
@@ -678,7 +678,7 @@ h1.sec-5-txt{
 }
 .footer-txt .txt-bottom .light{
     padding-top: 90px;
-    font-family: "pretendard";
+    font-family: "Roboto";
     color: #584D4D;
     font-size: 1.5rem;
     white-space: nowrap;
