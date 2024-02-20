@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 1. css cdn 링크 연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <!-- 2. script cdn 링크 연결 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+
+    <script src="./js/script.js"></script>
+
+    <title>복순도가</title>
+</head>
+<body>
+    <!-- banner+ section 7개 + footer를 묶는 전체 박스 -->
+    <div class="con">
+        <!-- 배너(헤더 + 문단 + 비디오부분)-->
+        <section class="banner">
+            <!-- 헤더 -->
+            <div class="header-con">
+                <ul class="header">
+                    <li class="head-log">
+                        <a href="#none">
+                            <img src="./복순도가img/logo.jpg" alt="" class="logo">
+                        </a>
+                    </li>
+                    <div class="category">
+                        <li class="menu">
+                            <a href="#none">복순도가</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#none">오프라인</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#none">발효마을</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#none">발효건축</a>
+                        </li>
+                    </div>
+                    <div class="head-btn">
+                        <input type="checkbox" id="menu-btn">
+                        <label for="menu-btn">
+                            <span></span><span></span><span></span>
+                        </label>
+                    </div>
+                </ul>
+            </div>
+                <!-- 햄버거 버튼 클릭하면 열리는 서브메뉴박스 -->
+            <div class="menu-bar-box">
+                    <ul class="menu-bar">
+                        <li>
+                            <a href="#none" class="menu">Order</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">My page</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">Review</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">Q&A</a>
+                        </li>
+                    </ul>
+            </div>
+
+                <!-- 모바일 그리드에서 햄버거 버튼 클릭하면 위에서 아래로 나타나는 서브메뉴박스 (pc에서 none처리 할것)-->
+            <div class="m-menu-bar-box">
+                    <ul class="m-menu-bar">
+                        <li>
+                            <a href="#none" class="m-menu">복순도가</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="m-menu">오프라인</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="m-menu">발효마을</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="m-menu">발효건축</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <!-- 배너 문단 -->
+            <div class="three-sec">
+                <div class="first-sen">
+                    <h1 data-aos="fade-left" data-aos-duration="1500"  data-aos-offset="300">사람을</h1>
+                    <h1 data-aos="fade-left" data-aos-duration="1500"  data-aos-offset="300">노래</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="300">하게</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="300">하는</h1>
+                </div>
+                <div class="second-sen">
+                    <h1 data-aos="fade-left" data-aos-duration="1500"  data-aos-offset="300">아름답고</h1>
+                    <h1 data-aos="fade-left" data-aos-duration="1500"  data-aos-offset="300">하얀</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="300">빛의</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="300">오브제,</h1>
+                </div>
+                <div class="third-sen">
+                    <h1 data-aos="fade-left" data-aos-duration="1500"  data-aos-offset="400">복순도가</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="400">손막걸리</h1>
+                </div>
+            </div>
+            <!-- 비디오 -->
+            <div class="video-box">
+                <!-- 재생되는 비디오 -->
+                <video id="mainMP4" data-keepplaying playsinline muted loop autoplay inline ><source src="https://player.vimeo.com/progressive_redirect/playback/512784548/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2afb339fb8023d7672e3b86ee5be908f9303eec4cc1176a817b6e1eecacb89aa" type="video/mp4"></video>
+                <!-- play video 버튼 -->
+                <a class="video-btn">
+                    <img src="./복순도가img/video-btn.png" alt="">
+                </a>
+            </div>
+        </section>
+
+        <!-- sec-1 (txt와 img 2개 구성)-->
+        <div class="sec-1">
+            <div class="sec1-txt">
+                <h2 class="main-txt" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="300">
+                    가치의지속, 발효문화</h2>
+                <p class="text p1" data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="400">
+                    복순도가는 프리미엄 전통주뿐만 아니라<br>
+                    화장품, 레스토랑, 펍등 발효문화醱酵文化 라는<br>
+                    콘텐츠를 지속적으로 개발해오고 있습니다.</p>
+                <p class="text p2" data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="400">
+                    발효문화醱酵文化 는 공간을 넘어<br>
+                    다양한 분야에 어우러져 새로운 가치를 만들어가는 것을 의미합니다.
+                </p>
+            </div>
+            <div class="sec1-imgs">
+                <div class="sec1-left" data-aos="fade-right" data-aos-duration="1300"  data-aos-offset="300">
+                    <img src="./복순도가img/5.jpg" alt="">
+                </div>
+                <div class="sec1-right" data-aos="fade-left" data-aos-duration="1300"  data-aos-offset="500">
+                    <img src="./복순도가img/3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- sec-2 (txt 2개와 img 3개 구성)-->
+        <div class="sec-2">
+            <!-- 왼쪽에 fixed 되는 txt -->
+            <p class="fixed-txt">
+                변화와순환,<br>
+                발효건축
+            </p>
+            <!-- 오른쪽 txt와 사진 부분 -->
+            <div class="right section">
+                <div class="right-txtes">
+                    <p class="right txt1" data-aos="fade-left" data-aos-duration="1000"  data-aos-offset="300">
+                        공간이 인간에게 유용하게 바뀌는 과정을<br>
+                        발효건축醱酵建築 이라 정의하였습니다.
+                    </p>
+                    <p class="right txt2" data-aos="fade-left" data-aos-duration="1200"  data-aos-offset="400">
+                        쌀과 누룩이 발효과정을 거쳐 새로운 전통주가 되듯,<br> 
+                        도가 또한 발효라는 컨셉 아래 흙 · 논 · 볏짚 · 누룩 등의<br> 
+                        한국적 소재들이 건축 재료로서의 일차적 의미를 넘어
+                    </p>
+                    <p class="right txt3" data-aos="fade-left" data-aos-duration="1200"  data-aos-offset="400">
+                        다양한 방식으로 사운드 · 영상 · 설치예술 등에<br>
+                        어우러져 새로운 공간을 만듭니다. 
+                    </p>
+                </div>
+                <div class="right-pics">
+                    <div class="right pic1" data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="300">
+                        <img src="./복순도가img/8.jpg" alt="">
+                    </div>
+                    <div class="sec2-two-items">
+                        <div class="right pic2" data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="300">
+                            <img src="./복순도가img/7.jpg" alt="">
+                        </div>
+                        <div class="right pic3" data-aos="fade-left" data-aos-duration="1200"  data-aos-offset="600">
+                            <img src="./복순도가img/9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sec-3 (txt와 img 1개 구성)-->
+        <div class="sec-3">
+            <div class="sec-3-txt" data-aos="fade-up" data-aos-duration="1200"  data-aos-offset="300">
+                <p class="txt-1">쌀나고 술 익는 곳,
+                </p>
+                <p class="txt-2">울산광역시 언양
+                </p>
+                <span class="eng">
+                    premium brand of rice wine
+                </span>
+                <p class="txt-3">
+                    자연과 사람을 생각합니다.
+                </p>
+            </div>
+
+            <div class="sec-3-img">
+                <img src="./복순도가img/23.jpg" alt="">
+            </div>
+        </div>
+        <!-- sec-4 (txt와 hover할 때 정보 나오는 사진 양옆 2개 구성)-->
+        <div class="sec-4-wrap">
+            <div class="sec-4-txt">
+                <h1 class="sec-4">
+                    Choose your taste !
+                </h1>
+            </div>    
+            <div class="sec4-items">
+                <div class="sec4-con">
+                    <div class="sec4-item-1">
+                            <img src="./복순도가img/복순2.png" alt="">                       
+                            <!-- 호버하면 보이는 부분 -->
+                            <div class="hover-img">
+                                <span>빨간쌀 막걸리</span>
+                                <p>주종 : 탁주</p>
+                                <p>알코올 함량 : 6.5%</p>
+                                <p>용량 : 935ml</p>
+                            </div>  
+                    </div>
+                    <button class="add">
+                        Add to Cart
+                    </button>
+                </div>      
+                   
+                <div class="sec4-con">
+                    <div class="sec4-item-2">
+                        <img src="./복순도가img/복순1.png" alt="">
+                        <!-- 호버하면 보이는 부분 -->
+                        <div class="hover-img">
+                            <span>복순도가 손막걸리</span>
+                            <p>주종 : 탁주</p>
+                            <p>알코올 함량 : 6.5%</p>
+                            <p>용량 : 935ml</p>
+                        </div> 
+                    </div>
+                    <button class="add">
+                        Add to Cart
+                    </button>
+                </div>    
+            </div>
+        </div>
+        <!-- sec-5 (txt와 사진3개)-->
+        <div class="sec-5">
+            <h1 class="sec-5-txt">
+                why is it special?
+            </h1>
+
+            <div class="sec5-items">
+                <div class="sec5-item sec1">
+                    <p class="subject" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="300">풍부한 천연 탄산</p>
+                </div>
+                <div class="sec5-item sec2">
+                    <p class="subject" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="300">직접 빚은 전통 누룩 사용 </p>
+                </div>
+                <div class="sec5-item sec3">
+                    <p class="subject" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="300">유산균과 영양이<br>
+                        그대로 살아있는 생막걸리
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- sec-6 (사진과 오른쪽 txt)-->
+        <div class="sec-6">
+            <div class="sec-6-img" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="300">
+                <img src="./복순도가img/22.jpg" alt="">
+            </div>
+
+            <div class="sec-6-txt">
+                <h2 class="main" data-aos="fade-up" data-aos-duration="1500"  data-aos-offset="400">
+                    복순도가는<br>
+                    기다림과 정성으로 백미를 빚어 냅니다
+                </h2>
+                <h3 class="sub" data-aos="fade-up" data-aos-duration="1500"  data-aos-offset="400">
+                    항상 좋은 것만 주시려는<br> 
+                    어머니의 마음을 따라 100% 국산 쌀만을 사용하여<br>  
+                    전통 방식 그대로<br>  
+                    옛 항아리에 담아 빚었습니다.
+                </h3>
+            </div>
+        </div>
+        <!-- sec-7 (q&a 부분)-->
+        <div class="sec-7">
+            <div class="sec-7-txt">
+                Questions
+            </div>
+            <ul class="menu-wrap">
+                <li class="menu">
+                    <div class="menu-question">
+                        <h5 class="btn">Is there another branch?</h5>
+                        <div class="svg-downarrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#none">it is located in Ulsan, Busan, and Nodeul Island</a>
+                    </div>
+                </li>
+
+                <li class="menu">
+                    <div class="menu-question">
+                        <h5 class="btn">Can I participate in the makgeolli experience class?</h5>
+                        <div class="svg-downarrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#none">It's possible at the Ulsan headquarters</a>
+                    </div>
+                </li>
+
+                <li class="menu">
+                    <div class="menu-question">
+                        <h5 class="btn">I'd like to inquire about the franchise</h5>
+                        <div class="svg-downarrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#none">We only operate directly</a>
+                    </div>
+                </li>
+
+                <li class="menu">
+                    <div class="menu-question">
+                        <h5 class="btn">Can I buy it as a group?</h5>
+                        <div class="svg-downarrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#none">Please contact online for group purchases</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="last">
+                <div class="other-svg">
+                    <div class="item-svg">
+                        <a href="#none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                    </div>
+                    <div class="item-svg">
+                        <a href="#none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        </a>
+                    </div>
+                    <div class="item-svg">
+                        <a href="#none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                        </a>
+                    </div>
+                    <div class="item-svg">
+                        <a href="#none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-txt">
+                    <ul class="txt-top">
+                       <li>
+                        <a href="#none">Company </a>
+                       </li>
+                       <li>
+                        <a href="#none">Agreement </a>
+                       </li>
+                       <li>
+                        <a href="#none">Privact  Policy </a>
+                       </li>
+                       <li>
+                        <a href="#none">Guide </a>
+                       </li>
+                    </ul>
+                    <div class="txt-bottom">
+                        <div class="light">
+                            농업회사법인 복순도가 주식회사 대표자(성명)김정식 ㅣ 44903 울산광역시 울주군 상북면 향산동길 48<br>
+                            사업자등록번호161-87-02134 ㅣ  통신판매업신고 제2015-울산울주-0164호 [사업자정보확인] 전화1577-6746 팩스
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+      <!-- 4. 스크립트로 aos 실행시키기 -->
+      <script> AOS.init(); </script> 
+
+
+</body>
+</html>
